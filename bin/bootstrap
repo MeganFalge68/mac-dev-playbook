@@ -50,8 +50,8 @@ function run-installation() {
 }
 
 function main() {
-  export PATH="$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
-  test-if-rosetta-installed || install-rosetta
+  export PATH="$HOME/Library/Python/3.8/bin:/usr/local/homebrew/bin:$PATH"
+  #test-if-rosetta-installed || install-rosetta
   test-if-xcode-tools-installed || install-xcode-tools
   install-ansible
   run-installation
